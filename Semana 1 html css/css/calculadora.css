@@ -1,0 +1,42 @@
+/* ===== Sección Calculadora (card) ===== */
+.seccion-calculadora{
+  padding: 80px 16px;
+  background: #eef4ff;
+  display: flex;
+  justify-content: center;
+}
+
+.calc-card{
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.calc-titulo{
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.btn-calculadora{
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #b32fff;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-calculadora:hover{
+  filter: brightness(0.95);
+}
+
+.btn-calculadora:active{
+  transform: translateY(1px);
+}
