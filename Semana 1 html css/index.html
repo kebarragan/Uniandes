@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/informacion.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tarjetas.css" />
+    <link rel="stylesheet" href="css/calculadora.css" />
+    <link rel="stylesheet" href="css/panelcalcu.css" />
+
+    <title>Aplicacion Web</title>
+  </head>
+
+  <body> 
+    <main class="centrar">
+      <div class="contenido">
+        <div class="avatar" aria-label="KB">KB</div>
+        <h1 class="nombre">Karina Barragán</h1>
+        <p class="subtitulo">Desarrolladora</p>
+        <p class="descripcion">
+          Trabajo en una empresa de tecnología como encargada en el Área de Sistemas
+        </p>
+
+        <div class="accion">
+          <a class="btn btn_inicio" href="#informacion">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 
+                10-4.48 10-10S17.52 2 12 2zm1 
+                15h-2v-6h2v6zm0-8h-2V7h2v2z"
+              />
+            </svg>
+            Información
+          </a>
+
+          <a class="btn btn_informacion" href="#proyectos">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10 2h4c1.1 0 2 .9 2 2v2h4
+                c1.1 0 2 .9 2 2v12c0 1.1-.9
+                2-2 2H4c-1.1 0-2-.9-2-2V8
+                c0-1.1.9-2 2-2h4V4
+                c0-1.1.9-2 2-2zm0 4h4V4h-4v2z"
+              />
+            </svg>
+            Experiencia
+          </a>
+
+          <a class="btn btn_informacion" href="#calculadora">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 2h16c1.1 0 2 .9 2 2v16
+                c0 1.1-.9 2-2 2H4
+                c-1.1 0-2-.9-2-2V4
+                c0-1.1.9-2 2-2zm2 4h12v4H6V6zm0 6h3v3H6v-3zm0 4h3v3H6v-3zm5-4h3v3h-3v-3zm0 4h3v3h-3v-3zm5-4h3v3h-3v-3z"
+              />
+            </svg>
+            Calculadora Financiera
+          </a>
+        </div>
+      </div>
+    </main>
+ 
+    <section class="info-personal" id="informacion">
+      <div class="info-personal__contenido">
+        <h2 class="info-personal__titulo">Información Personal</h2>
+
+        <div class="info-etiqueta">
+          <p><strong>Nombre:</strong> Karina Barragán</p>
+          <p><strong>Profesión:</strong> Tecnóloga en Análisis de Sistemas</p>
+          <p><strong>Correo:</strong> karinbg69@uniandes.edu.ec</p>
+          <p><strong>Ubicación:</strong> Ecuador</p>
+          <p>
+            <strong>Intereses:</strong> Desarrollar Aplicaciones, aprendizaje contínuo
+          </p>
+        </div>
+      </div>
+    </section>
+ 
+    <section class="sobre-mi" id="proyectos">
+      <div class="sobre-mi__contenido">
+        <h2 class="sobre-mi__titulo">Acerca de Mi</h2>
+        <p class="sobre-mi__descripcion">
+          Hola me gradué hace 10 años como Tecnóloga en Analista de Sistemas
+          actuamente trabajo en una empresa de venta de tecnología en el Área de
+          Sistemas como encargada de el área, realizando varias actividades
+        </p>
+
+        <div class="tarjetas">
+          <div class="tarjeta">
+            <div class="tarjeta__icono">
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                <path
+                  d="M10 2h4c1.1 0 2 .9 2 2v2h4c1.1 
+                  0 2 .9 2 2v12c0 1.1-.9 
+                  2-2 2H4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h4V4c0-1.1.9-2 2-2zm0 4h4V4h-4v2z"
+                />
+              </svg>
+            </div>
+            <h3>Experiencia</h3>
+            <ul>
+              <li>Migración de un Sistema de VB 6.0 a C#</li>
+              <li>Migración de Módulos de Facturación, Inventario, Contabilidad y Seguridad</li>
+            </ul>
+          </div>
+
+          <div class="tarjeta">
+            <div class="tarjeta__icono">
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                <path d="M3 3h18v4H3V3zm0 7h18v4H3v-4zm0 7h18v4H3v-4z" />
+              </svg>
+            </div>
+            <h3>Proyectos Futuros</h3>
+            <ul>
+              <li>Creación de proyectos profesionales de Migración a la Web</li>
+              <li>Creación de módulo de garantías</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <section class="seccion-calculadora" id="calculadora">
+      <div class="calc-card">
+        <h3 class="calc-titulo">Calculadora Financiera </h3>
+
+        <button type="button" class="btn-calculadora" onclick="toggleCalculadora()">
+          Abrir Calculadora
+        </button>
+      </div>
+    </section>
+ 
+    <div class="calculadora" id="panelCalculadora">
+      <input type="text" id="pantalla" readonly />
+
+      <div class="calc-grid">
+        <a onclick="agregar('7')">7</a>
+        <a onclick="agregar('8')">8</a>
+        <a onclick="agregar('9')">9</a>
+        <a onclick="agregar('/')">÷</a>
+
+        <a onclick="agregar('4')">4</a>
+        <a onclick="agregar('5')">5</a>
+        <a onclick="agregar('6')">6</a>
+        <a onclick="agregar('*')">×</a>
+
+        <a onclick="agregar('1')">1</a>
+        <a onclick="agregar('2')">2</a>
+        <a onclick="agregar('3')">3</a>
+        <a onclick="agregar('-')">−</a>
+
+        <a onclick="agregar('0')">0</a>
+        <a onclick="limpiar()">C</a>
+        <a onclick="calcular()">=</a>
+        <a onclick="agregar('+')">+</a>
+      </div>
+    </div> 
+    <script>
+      const panel = document.getElementById("panelCalculadora");
+      const pantalla = document.getElementById("pantalla");
+
+      function toggleCalculadora() {
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      }
+
+      function agregar(valor) {
+        pantalla.value += valor;
+      }
+
+      function limpiar() {
+        pantalla.value = "";
+      }
+
+      function calcular() {
+        try {
+          pantalla.value = eval(pantalla.value);
+        } catch (e) {
+          pantalla.value = "Error";
+        }
+      }
+    </script>
+  </body>
+</html>
